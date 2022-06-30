@@ -4,7 +4,7 @@ import { QueryClientProvider, QueryClient } from 'react-query';
 import { ReactQueryDevtools } from 'react-query/devtools';
 import '../styles/index.css';
 import 'react-loader-spinner/dist/loader/css/react-spinner-loader.css';
-import Layout from '../components/Layout/Layout';
+import Layout from '@shared/Layout/Layout';
 
 const queryClient = new QueryClient();
 

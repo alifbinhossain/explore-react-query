@@ -1,8 +1,8 @@
 import React from 'react';
 import { useQuery } from 'react-query';
-import { getData } from '../utils/getData';
-import Error from '../components/Shared/Error/Error';
-import Loader from '../components/Shared/Loader/Loader';
+import { getData } from '@utlis/getData';
+import Loader from '@shared/Loader/Loader';
+import Error from '@shared/Error/Error';
 
 interface QueryProps {
   isLoading: boolean;

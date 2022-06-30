@@ -1,7 +1,7 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
-import Error from '../components/Shared/Error/Error';
-import Loader from '../components/Shared/Loader/Loader';
+import Loader from '@shared/Loader/Loader';
+import Error from '@shared/Error/Error';
 
 const heroes = () => {
   const [data, setData] = useState([]);
