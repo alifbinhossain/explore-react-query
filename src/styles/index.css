@@ -1,38 +1,26 @@
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-html {
-  font-size: 30%;
-}
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+
 body {
-  font-size: 1.6rem;
-  color: #07031f;
-  max-width: 100vw;
-  overflow: hidden;
+  font-size: 1rem;
 }
 
 h1 {
-  @apply text-[8rem] font-lora leading-tight;
 }
 h2 {
-  @apply text-[6rem] font-lora font-bold leading-tight;
 }
 h3 {
-  @apply text-[3.6rem] font-lora font-medium leading-tight;
 }
 h4 {
-  @apply text-[3rem] font-lora font-medium leading-tight;
 }
 p {
-  @apply text-[16px] md:text-[2.4rem] text-black/80 font-inter leading-[3.6rem];
 }
 .p_small {
-  @apply text-[1.8rem] font-inter leading-[3.0rem];
 }
 a {
-  @apply hover:text-primary font-semibold transition duration-300 ease-in-out lg:text-[2.4rem] text-[16px] font-inter leading-tight;
+  @apply text-gray-100 text-lg  underline active:text-gray-300;
 }
 button {
-  @apply lg:text-[2.4rem] text-[16px] font-inter font-semibold leading-tight px-[5rem] py-[2.4rem] text-white active:scale-95 transition-all transform bg-secondary rounded-[0.8rem];
 }
 .bg-style {
   @apply bg-cover bg-no-repeat bg-center;
@@ -40,39 +28,23 @@ button {
 .sb {
   @apply border border-red-500;
 }
+
 .container {
-  @apply mx-auto max-w-[80%];
+  margin: 0 auto;
+  width: calc(100% - 80px);
 }
-@media (min-width: 360px) {
+
+@media (min-width: 960px) {
   .container {
-    @apply max-w-[80%];
+    width: calc(100% - 160px);
   }
 }
 
-@media (min-width: 768px) {
-  html {
-    font-size: 50%;
-  }
+@media (min-width: 1440px) {
   .container {
-    @apply max-w-[70rem];
+    width: calc(100% - 180px);
+    max-width: 1320px;
   }
 }
-@media (min-width: 1024px) {
-  html {
-    font-size: 62.5%;
-  }
-  .container {
-    @apply max-w-[90rem];
-  }
-}
-@media (min-width: 1280px) {
-  .container {
-    @apply max-w-[104rem];
-  }
-}
-@media (min-width: 1536px) {
-  .container {
-    @apply max-w-[124rem];
-  }
-}
-@import "tailwindcss/utilities";
+
+@import 'tailwindcss/utilities';
